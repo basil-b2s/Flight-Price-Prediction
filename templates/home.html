@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Flight Price Prediction</title>
+  </head>
+  <body>
+
+    <div class="top">
+      <h1 class = 'logo' >Flight Price</h1>
+    </div>
+    <br><br><br>
+    <div class="wrapper">
+      <!--form-->
+      <form class="details_form" action="\predict" method="post">
+
+        <!--Source-->
+        <h3 class = "form_head">Source</h3>
+        <select name="Source" required="true">
+          <option value="Banglore">Banglore</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Chennai">Chennai</option>
+        </select>
+
+        <!--Destination-->
+        <h3 class = "form_head">Destination</h3>
+        <select name="Destination" required="true">
+          <option value="Cochin">Cochin</option>
+          <option value="Banglore">Banglore</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Chennai">Chennai</option>
+          <option value="New Delhi">New Delhi</option>
+        </select>
+
+        <!--Airline-->
+        <h3 class = "form_head">Airline</h3>
+        <select name="Airline" required="true">
+          <option value="Jet Airways">Jet Airways</option>
+          <option value="IndiGo">IndiGo</option>
+          <option value="Air India">Air India</option>
+          <option value="Multiple carriers">Multiple carriers</option>
+          <option value="SpiceJet">SpiceJet</option>
+          <option value="Vistara">Vistara</option>
+          <option value="Air Asia">Air Asia</option>
+          <option value="GoAir">GoAir</option>
+          <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+          </option>
+          <option value="Jet Airways Business">Jet Airways Business</option>
+          <option value="Vistara Premium economy">Vistara Premium economy</option>
+          <option value="Trujet">Trujet</option>
+        </select>
+
+        <!--Stops-->
+        <h3 class = "form_head">Stops</h3>
+        <select  name="stops" required="true">
+          <option value="0">Non-Stop</option>
+          <option value="1">1-Stop</option>
+          <option value="2">2-Stop</option>
+          <option value="3">3-Stop</option>
+          <option value="4">4-Stop</option>
+        </select>
+
+        <!--Date of Departure-->
+        <h3 class = "form_head">Date of Departure</h3>
+        <input type="date" name = "date_of_dep"  required="true">
+
+        <!--Departure Tim-->
+        <h3 class = "form_head">Departure Time</h3>
+        <input type="time" name = "dep_time"  required="true">
+
+        <!--Arrival Time-->
+        <h3 class = "form_head">Arrival Time</h3>
+        <input type="time" name="arr_time"  required="true">
+
+        <!--submit-->
+        <input type="submit" class="button" value="Submit">
+      </form>
+      <br>
+
+      <h1> {{ pred }} </h1>
+
+      </div>
+
+      <br>
+
+    </div>
+  </body>
+</html>
