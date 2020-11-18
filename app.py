@@ -98,7 +98,7 @@ def predict():
     # prediction
     prediction = model.predict(values)
 
-    # returning the results to the webpage
+    # returning the results to the home.html
     return render_template("home.html", pred = "Flight ticket price is RS {}" .format(int(prediction)))
 
 if __name__ == "__main__":
