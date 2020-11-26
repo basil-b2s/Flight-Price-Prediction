@@ -1,6 +1,6 @@
 # Flight-Price-Prediction
 
- ### It's an end to end Machine Learning project for the Flight Price prediction.
+ ### It's an end to end Machine Learning project for the Flight Price prediction and Deployement using Flask
  
  ## Screenshot
  
